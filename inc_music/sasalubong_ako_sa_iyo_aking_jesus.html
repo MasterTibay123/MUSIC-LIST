@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html manifest="demo.appcache">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+        <meta charset="UTF-8" />
+<meta name="description" content="Free Web Music" />
+<meta name="keywords" content="HTML,CSS, JavaScript" />
+<meta name="author" content="Jayar Tibay" />
+  <title>Sasalubong Ako Sa Iyo Aking Jesus</title>
+  <link rel="shortcut icon" href="https://drive.google.com/uc?id=10VpD-JKUp34bVSE8c-IQe5xchVbTtPy_" />
+  <link rel="stylesheet" type="text/css" href="../media_assets/css/style2.css">
+</head>
+<body style="background-color:black;color:white;">
+    <br>
+<audio autoplay controls  id="Player" src="https://drive.google.com/uc?id=1AJS9T2Q7RGWgwjoknY-VRA60ibeykbiC"><marquee direction="left" behavior="scroll" bgcolor="#00FF66" onmouseover="this.stop()" onmouseout="this.start()"><strong>Note:</strong> The audio tag is not supported in Internet Explorer 8 and earlier versions.</marquee></audio>
+<br>
+         <!--marquee direction="left" behavior="alternate" bgcolor="#00FF66" onmouseover="this.stop()" onmouseout="this.start()" onclick="history.back()"><strong><a href= "../../loader/">Main Menu</a></strong></marquee-->
+      <br>
+    <font class="h">
+       <script type="text/javascript" src="../media_assets/json/color_2.json"></script>
+    <script type="text/javascript" src="../media_assets/js/sasalubong_ako_sa_iyo_aking_jesus.js"></script>
+    <script type="text/javascript" src="../media_assets/js/scroll_title.js"></script>
+      <script type="text/javascript">
+      var Player = document.getElementById('Player');
+Player.onended = function(){
+    window.location.href = "../index.html";
+    } 
+    console.log(Player);
+      </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </font>
+    <marquee direction="right" behavior="alternate" bgcolor="#00FF66" onmouseover="this.stop()" onmouseout="this.start()" onclick="next()"><strong><a href= "../index.html">Next</a></strong></marquee>
+</body>
+</html>
