@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#currentSong {
+    font-weight: bold;
+    margin-top: 10px;
+}
