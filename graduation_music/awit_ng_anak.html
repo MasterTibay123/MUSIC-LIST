@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <title>Awit Ng Anak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+        <meta charset="UTF-8" />
+<meta name="description" content="Free Web Music" />
+<meta name="keywords" content="HTML,CSS, JavaScript" />
+<meta name="author" content="Jayar Tibay" />
+  <link rel="shortcut icon" href="https://drive.google.com/uc?id=10VpD-JKUp34bVSE8c-IQe5xchVbTtPy_" />
+  <link rel="stylesheet" type="text/css" href="../media_assets/css/style1.css">
+</head>
+<body align="center" onload = "loadXMLDoc()" style="background-color:black;color:white;">
+      <br>
+  <audio autoplay controls  id="Player" src="https://drive.google.com/uc?id=188B9lilBdLG_GAC3c8sxHz4MUYMvqsv6"><marquee direction="left" behavior="scroll" bgcolor="#00FF66" onmouseover="this.stop()" onmouseout="this.start()"><strong>Note:</strong> The audio tag is not supported in Internet Explorer 8 and earlier versions.</marquee></audio>
+<br>
+       <!--marquee direction="left" behavior="alternate" bgcolor="#00FF66" onmouseover="this.stop()" onmouseout="this.start()" onclick="history.back()"><strong><a href= "../loader/">Main Menu</a></strong></marquee-->
+      <br>
+    <font class="h">
+    <script type="text/javascript" src="../media_assets/json/color_1.json"></script>
+      <script type="text/javascript" src="../media_assets/js/awit_ng_anak.js"></script>
+      
+      <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </font> 
+    <br>
+        <marquee direction="right" behavior="alternate" bgcolor="#00FF66" onmouseover="this.stop()" onmouseout="this.start()" onclick="next()"><strong><a href= "glowing_inside.html">Next</a></strong></marquee>
+    <font class="h1" >
+    <br>
+   <div id="demo">
+     <script type="text/javascript">
+      var Player = document.getElementById('Player');
+Player.onended = function(){
+    window.location.href = "glowing_inside.html";
+    } 
+    console.log(Player);
+     
+function loadXMLDoc() {
+  var xmlhttp;
+  if (window.XMLHttpRequest) {
+    xmlhttp = new XMLHttpRequest();
+  } else {
+    // code for older browsers
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xmlhttp.open("GET", "../media_assets/txt/awit_ng_anak.txt", true);
+  xmlhttp.send();
+}
+
+</script>
+    </div>
+  </font>
+    
+</body>
+</html>
